@@ -14,7 +14,7 @@ CREATE TABLE trainee(
     ET_Gmath tinyint check(ET_Gmath >= 0 AND ET_Gmath <=20),
     ET_English tinyint check(ET_English >= 0 AND ET_English <=50),
     Training_Class VARCHAR(100) NOT NULL,
-    Evaluation_Notes VARCHAR(250)
+    Evaluation_Notes VARCHAR(200)
 );
 
 -- ADD FIELD 
