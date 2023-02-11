@@ -1,11 +1,9 @@
+CREATE DATABASE IF NOT EXISTS fresher_training_management;
 
-drop database if exists fresher_training_management;
+USE fresher_training_management;
 
-create database if not exists fresher_training_management;
-
-use fresher_training_management;
 /* CREATE TABLE */
-create table trainee(
+CREATE TABLE trainee(
     TraineeID INT PRIMARY KEY auto_increment NOT NULL,
     Full_Name VARCHAR(50) NOT NULL,
     Birth_Date Date NOT NULL,
@@ -17,6 +15,6 @@ create table trainee(
     Evaluation_Notes VARCHAR(250)
 );
 
-/* ADD FIELD */
+-- ADD FIELD 
 ALTER TABLE Trainee
 ADD VTI_Account VARCHAR(50) NOT NULL UNIQUE;
